@@ -4,7 +4,7 @@ let chai, app;
 before(async function() {
   chai = await import('chai');
   const chaiHttp = await import('chai-http');
-  app = await import('../app.js'); // Adjust the path to where your Express app is exported
+  app = await import('../script.js'); // Adjust the path to where your Express app is exported
 
   chai.use(chaiHttp.default);
 });
