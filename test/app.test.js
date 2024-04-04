@@ -1,9 +1,9 @@
-const chai = require('chai');
-const chaiHttp = require('chai-http');
-const expect = chai.expect;
+let chai = require('chai');
+let chaiHttp = require('chai-http');
+let expect = chai.expect;
 chai.use(chaiHttp);
 
-const app = require('../script.js'); // Adjust the path as necessary
+let app = require('../script.js'); // Adjust the path as necessary
 
 describe('Application routes', function() {
   describe('GET /', function() {
