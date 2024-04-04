@@ -1,0 +1,29 @@
+name: Travel Workflow
+on:
+    workflow_dispatch: 
+    push:
+        branches: 
+        - main
+        - '/feature/*'
+jobs:
+    unit-test:
+        runs-on: ubuntu-latest
+        steps:
+            - name: check-repo
+              uses: actions/checkout@v4
+
+            - name: install node
+              uses: actions/setup-node@v4
+              with:
+                node-version: 18
+            - name: install dependecies
+              run: npm install --save-dev mocha chai supertest
+
+      
+            - name: Unit Testing
+              run: npm test
+
+
+
+
+
