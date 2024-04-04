@@ -1,0 +1,25 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "Travel Destination",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tolaoguntunde/Travel-destination.git"
+  },
+  "author": "serah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tolaoguntunde/Travel-destination/issues"
+  },
+  "homepage": "https://github.com/tolaoguntunde/Travel-destination#readme",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {}
+}
